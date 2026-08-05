@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>🚽 SKIBIDI CORE — MAXIMUM BRAINROT ENGINE v9.81 🚽</title>
+<meta name="description" content="The strongest brainrot ever rendered in a browser.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚽</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="booting">
+
+<!-- ══════════════ BOOT GATE (audio needs a click) ══════════════ -->
+<div id="boot">
+  <div class="boot-inner">
+    <div class="boot-toilet">🚽</div>
+    <h1 class="boot-title" data-text="SKIBIDI CORE">SKIBIDI CORE</h1>
+    <p class="boot-sub">BRAINROT ENGINE v9.81 · CERTIFIED SIGMA · OHIO SERVERS ONLINE</p>
+    <ul class="boot-log" id="bootLog"></ul>
+    <button id="startBtn" class="start-btn">
+      <span>TAP TO INITIATE BRAINROT</span>
+      <small>⚠ loud · flashing · irreversible</small>
+    </button>
+    <p class="boot-warn">by continuing you consent to the fanum tax</p>
+  </div>
+</div>
+
+<!-- ══════════════ THE APP ══════════════ -->
+<div id="app" aria-hidden="true">
+
+  <!-- background chaos layers -->
+  <div class="bg-conic" aria-hidden="true"></div>
+  <div class="bg-scan" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ── HUD ── -->
+  <header class="hud">
+    <div class="hud-left">
+      <span class="logo">🚽 SKIBIDI<b>CORE</b></span>
+      <span class="live"><i></i>LIVE</span>
+    </div>
+
+    <div class="meter" title="brainrot saturation">
+      <div class="meter-label">BRAINROT SATURATION</div>
+      <div class="meter-bar"><div class="meter-fill" id="meterFill"></div><span class="meter-pct" id="meterPct">0%</span></div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><span>AURA</span><b id="statAura">+0</b></div>
+      <div class="stat"><span>RIZZ</span><b id="statRizz">0</b></div>
+      <div class="stat"><span>FANUM TAX</span><b id="statTax">$0</b></div>
+      <div class="stat"><span>MEWING STREAK</span><b id="statMew">0d 0h 0m</b></div>
+      <div class="stat"><span>OHIO PROXIMITY</span><b id="statOhio">0km</b></div>
+    </div>
+
+    <div class="hud-right">
+      <button id="chillBtn" class="tbtn" aria-pressed="false" title="reduce motion, strobe and noise">🧘 CHILL MODE</button>
+      <button id="muteBtn" class="tbtn" aria-pressed="false" title="mute the phonk">🔊 PHONK</button>
+    </div>
+  </header>
+
+  <!-- ── STAGE: the sacred 3-pane brainrot layout ── -->
+  <main class="stage">
+
+    <!-- PANE 1 -->
+    <section class="pane pane-runner">
+      <canvas id="runner"></canvas>
+      <div class="pane-tag">SUBWAY SURFERS <em>(legally distinct)</em></div>
+      <div class="pane-hud"><span id="runScore">0</span> COINS</div>
+      <div class="pane-corner">🎮 AUTO-PLAY · SKILL ISSUE PROTECTION: ON</div>
+    </section>
+
+    <!-- PANE 2 : main word cannon -->
+    <section class="pane pane-main">
+      <div class="halo" aria-hidden="true"></div>
+
+      <div class="word-cannon">
+        <div class="kicker" id="kicker">CURRENTLY TRENDING IN OHIO</div>
+        <h2 class="word glitch" id="word" data-text="SKIBIDI">SKIBIDI</h2>
+        <div class="word-sub" id="wordSub">definition: unknowable</div>
+      </div>
+
+      <div class="combo" id="combo" aria-live="polite"></div>
+
+      <div class="cta-row">
+        <button id="nukeBtn" class="nuke">💀 MAX BRAINROT 💀</button>
+        <button id="tapBtn" class="tap">👆 TAP FOR AURA</button>
+      </div>
+
+      <div class="ticker-mini" id="beatText">SKIBIDI DOP DOP YES YES</div>
+    </section>
+
+    <!-- PANE 3 -->
+    <section class="pane pane-toilet">
+      <div class="toilet-scene">
+        <div class="toilet-spin" id="toiletSpin">🚽</div>
+        <div class="toilet-ring"></div>
+        <div class="toilet-ring r2"></div>
+      </div>
+      <div class="pane-tag">SKIBIDI TOILET · SEASON 74 EP 9000</div>
+      <div class="hpbar"><span>CAMERAMAN HP</span><div><i id="hpFill"></i></div></div>
+      <div class="pane-corner">⚔ TOILETS DEFEATED: <b id="toiletKills">0</b></div>
+    </section>
+  </main>
+
+  <!-- ── bottom marquee ── -->
+  <footer class="marquee">
+    <div class="marquee-track" id="marqueeTrack"></div>
+  </footer>
+
+  <!-- ── overlays ── -->
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div id="dvd" class="dvd" aria-hidden="true">GYATT</div>
+  <div id="comments" class="comments" aria-hidden="true"></div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <div id="flash" class="flash" aria-hidden="true"></div>
+  <div id="bigword" class="bigword" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
